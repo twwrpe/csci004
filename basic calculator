@@ -1,0 +1,27 @@
+# Created on 3/6/21
+# Calculator program
+
+# asks the user for the first numerical value
+number1 = int(input("Please enter in a number: "))
+
+# prompts for second numerical value
+number2 = int(input("Please enter in a second number: "))
+
+# determines what type of math it'll do 
+operator = input("Please enter in a math operator (+, -, *, /, %): ")
+
+# logic processing
+value = 0
+if operator == "+":
+  value = number1 + number2
+elif operator == "-":
+  value = number1 - number2
+elif operator == "*":
+  value = number1 * number2
+elif operator == "/":
+  value = number1 / number2
+elif operator == "%":
+  value = number1 % number2
+
+# gives you the results of the math equation
+print("Here is your answer: ",number1, operator , number2, "=", value)
