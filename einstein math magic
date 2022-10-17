@@ -1,0 +1,25 @@
+# Created on 10/11/22
+# This program will turn any 3 digit input number into 1089
+
+print("Einstein Math Magic")
+print("Please enter in a 3 digit number that has a first and last digit that differs by at least 2")
+
+# gathers input from user
+number = input("Enter your 3 digit number: ")
+print("The number you entered is: " + number)
+
+# reverses the number entered
+reversed_number = str(number)[::-1]
+print("Your number reversed is: " + reversed_number)
+
+# finds the difference between the number input vs. reversed number
+difference_number = int(reversed_number) - int(number)
+print("The difference between them both is:", difference_number)
+
+# reverses the difference number variable 
+reversed_difference = str(difference_number)[::-1]
+print("That number reversed is:", reversed_difference)
+
+# final output of will output "1089"
+final_number = int(difference_number) + int(reversed_difference)
+print("The final number is:", final_number)
