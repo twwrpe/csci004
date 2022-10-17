@@ -1,0 +1,20 @@
+# Created on 3/31/21
+# This will determine your real estate commission
+
+# prompts the user for their name, homes sold, and total sales amount
+agent = str (input ("Please enter your name: "))
+homes = int (input ("Please enter in the number of homes sold: "))
+commissions  = int (input ("Please enter in your total sales amount: "))
+
+# formula on determining comission amount 
+if (commissions <=100000):
+  print("That's wonderful " + agent + "!")
+  print("You earned $",commissions * 0.04,"in commission ","by selling ",homes,"homes!")
+
+elif (commissions <=400000):
+  print("Great work " + agent + "!")
+  print("You earned $",commissions * 0.06,"in commission ","by selling ",homes,"homes!")
+
+elif (commissions >=400000):
+  print("That's insane " + agent + "!")
+  print("You earned $",commissions * 0.0675,"in commission ","by selling ",homes,"homes!")
