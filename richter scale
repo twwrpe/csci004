@@ -1,0 +1,14 @@
+# Created on 02/23/21
+# This program tells us how powerful an Earthquake is in relation to joules and tnt
+
+# rscale asks for user input
+measurement = (input("Please enter a Richter Scale Measurement: "))
+print("You've entered in: " + measurement)
+
+# converts measurement into joules
+energy = 10**(1.5*(float(measurement))+4.8)
+print("Which is:",energy,"joules")
+
+# converts joules to tnt 
+tnt = (energy * (2.390057361377) * 10-7) / 1000
+print("And is also:",tnt,"tons of TNT")
