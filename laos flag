@@ -1,0 +1,44 @@
+import turtle
+screen = turtle.Screen()
+t = turtle.Turtle()
+
+# moving position
+t.penup()
+t.goto(-400, 250)
+t.pendown()
+
+# creating the first red rectangle
+t.color("red")
+t.begin_fill()
+t.forward(800)
+t.right(90)
+t.forward(500)
+t.right(90)
+t.forward(800)
+t.end_fill()
+t.left(90)
+t.forward(500)
+
+# moving to middle portion
+t.penup()
+t.goto(-400, 80)
+t.pendown()
+
+t.color("blue")
+t.begin_fill()
+t.forward(167)
+t.left(90)
+t.forward(800)
+t.left(90)
+t.forward(167)
+t.end_fill()
+
+# moving position for circle
+t.penup()
+t.goto(70, 0)
+t.pendown()
+
+t.color("white")
+t.begin_fill()
+t.circle(75)
+t.end_fill()
