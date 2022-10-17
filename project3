@@ -1,0 +1,80 @@
+# Created 09-28-22
+# This program will create and output a student's grade transcript
+
+# introduction and intent of program
+print(" .. TRANSCRIPT SIMULATOR.. \n")
+print("I am here to simulate your grade transcript..")
+print("Now let's get personal ( ͡° ͜ʖ ͡°) .. \n")
+
+# gathering student information
+print(" .. REQUIRED INFORMATION .. \n")
+name = input("What's your name? ")
+studentid = input("What's your student ID number? ")
+number = int(input("How many classes are you taking (1-4)? "))
+
+print("\nI bet you're a busy person, aren't you?  ಠ_ಠ \n")
+
+# if student is taking 1 class, then it runs this code
+if number <= 1:
+  first_class = input("What's the name of your 1st class? ")
+  first_class_grade = input("What grade do you have? ")
+
+  print("\n.. UNOFFICIAL TRANSCRIPT .. ")
+  print("\nSTUDENT: ", name)
+  print("STUDENT ID#: ", studentid)
+  print("CLASS: ", first_class, " | " + "GRADE: ", first_class_grade)
+  print("\n..END OF SIMULATOR..")
+
+# if student is taking 2 classes, then it runs this code
+elif number <= 2:
+  first_class = input("What's the name of your 1st class? ")
+  first_class_grade = input("What grade do you have? ")
+  second_class = input("What's the name of your 2nd class? ")
+  second_class_grade = input("What grade do you have? ")
+
+  print("\n.. UNOFFICIAL TRANSCRIPT .. ")
+  print("\nSTUDENT: ", name)
+  print("STUDENT ID#: ", studentid)
+  print("CLASS: ", first_class, " | " + "GRADE: ", first_class_grade)
+  print("CLASS: ", second_class, " | " + "GRADE: ", second_class_grade)
+  print("\n..END OF SIMULATOR..")
+
+# if student is taking 3 classes, then it runs this code
+elif number <= 3:
+  first_class = input("What's the name of your 1st class? ")
+  first_class_grade = input("What grade do you have? ")
+  second_class = input("What's the name of your 2nd class? ")
+  second_class_grade = input("What grade do you have? ")
+  third_class = input("What's the name of your 3rd class? ")
+  third_class_grade = input("What grade do you have? ")
+
+  print("\n.. UNOFFICIAL TRANSCRIPT .. ")
+  print("\nSTUDENT: ", name)
+  print("STUDENT ID#: ", studentid)
+  print("CLASS: ", first_class, " | " + "GRADE: ", first_class_grade)
+  print("CLASS: ", second_class, " | " + "GRADE: ", second_class_grade)
+  print("CLASS: ", third_class, " | " + "GRADE: ", third_class_grade)
+  print("\n..END OF SIMULATOR..")
+
+# if student is taking 4 classes, then it runs this code
+elif number == 4:
+  first_class = input("What's the name of your 1st class? ")
+  first_class_grade = input("What grade do you have? ")
+  second_class = input("What's the name of your 2nd class? ")
+  second_class_grade = input("What grade do you have? ")
+  third_class = input("What's the name of your 3rd class? ")
+  third_class_grade = input("What grade do you have? ")
+  fourth_class =  input("What's the name of your 4th class? ")
+  fourth_class_grade = input("What grade do you have? ")
+
+  print("\n.. UNOFFICIAL TRANSCRIPT .. ")
+  print("\nSTUDENT: ", name)
+  print("STUDENT ID#: ", studentid)
+  print("CLASS: ", first_class, " | " + "GRADE: ", first_class_grade)
+  print("CLASS: ", second_class, " | " + "GRADE: ", second_class_grade)
+  print("CLASS: ", third_class, " | " + "GRADE: ", third_class_grade)
+  print("CLASS: ", fourth_class, " | " + "GRADE: ", fourth_class_grade)
+  print("\n..END OF SIMULATOR..")
+  
+else:
+  print("Wow, you're not taking any classes?")
