@@ -1,0 +1,59 @@
+# Created on 09/06/2022
+# This project is for my Voltorb turtle drawing 
+
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("yellow")
+
+# setting up turtles
+t = turtle.Turtle()
+p = turtle.Turtle()
+e = turtle.Turtle()
+s = turtle.Turtle()
+
+# hiding turtles
+t.hideturtle()
+p.hideturtle()
+e.hideturtle()
+s.hideturtle()
+
+# bottom half of voltorb
+t.goto(0,-100)
+t.width(2)
+
+
+t.begin_fill()
+t.fillcolor("white")
+t.circle(100)
+t.end_fill()
+
+p.goto(100,0)
+
+# top half of voltorb
+p.begin_fill()
+p.fillcolor("red")
+p.left(90)
+p.circle(100,180)
+p.end_fill()
+p.penup
+
+# eyes of voltorb 
+e.goto(-50,50)
+
+e.begin_fill()
+e.fillcolor("white")
+e.right(90)
+e.forward(30)
+e.left(90)
+e.forward(50)
+e.end_fill()
+
+s.goto(50,50)
+
+s.begin_fill()
+s.fillcolor("white")
+s.right(-90)
+s.forward(-30)
+s.left(-90)
+s.forward(-50)
+s.end_fill()
