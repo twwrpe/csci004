@@ -1,0 +1,137 @@
+# Create 09/14/22
+# Updated 09/20/22 with variables
+# This program will draw the Target logo
+
+# setting up drawing space and turtle
+import turtle
+wn = turtle.Screen()
+wn.bgcolor('grey')
+
+s = turtle.Turtle()
+s.hideturtle()
+s.pensize(1)
+s.pencolor("black")
+
+# multiple value variables 
+angle = [45, 90]
+distance = [25, 50, 100]
+
+# drawing 1st red circle
+s.penup()
+s.goto(0,-100)
+s.pendown()
+
+radius = 100
+
+s.begin_fill()
+s.fillcolor("red")
+s.circle(radius)
+s.end_fill()
+
+# drawing 2nd white circle
+s.penup()
+s.goto(0,-65)
+s.pendown()
+
+radius = 65
+
+s.begin_fill()
+s.fillcolor("white")
+s.circle(radius)
+s.end_fill()
+
+# drawing of 3rd red circle
+s.penup()
+s.goto(0,-25)
+s.pendown()
+
+radius = 25
+
+s.begin_fill()
+s.fillcolor("red")
+s.circle(radius)
+s.end_fill()
+
+# letter "T"
+s.penup()
+s.goto(-175,-125)
+s.pendown()
+s.pensize(5)
+s.forward(distance[1])
+s.back(25)
+s.right(angle[1])
+s.forward(distance[1])
+
+# letter "A"
+s.penup()
+s.goto(-100,-125)
+s.pendown()
+s.pensize(5)
+s.left(25)
+s.forward(55)
+s.back(55)
+s.right(50)
+s.forward(55)
+s.back(distance[0])
+s.left(115)
+s.forward(25)
+
+# letter "R"
+s.penup()
+s.goto(-60,-125)
+s.pendown()
+s.pensize(5)
+s.right(angle[1])
+s.forward(distance[1])
+s.back(distance[1])
+s.left(angle[1])
+s.circle(-15,180)
+s.left(135)
+s.forward(30)
+
+# letter "G"
+s.penup()
+s.goto(-25,-125)
+s.pendown()
+s.pensize(5)
+s.left(45)
+s.forward(distance[1])
+s.back(distance[1])
+s.right(angle[1])
+s.forward(distance[1])
+s.left(angle[1])
+s.forward(distance[1])
+s.left(angle[1])
+s.forward(distance[0])
+s.left(angle[1])
+s.forward(distance[0])
+
+# letter "E"
+s.penup()
+s.goto(50,-125)
+s.pendown()
+s.pensize(5)
+s.left(angle[1])
+s.forward(50)
+s.left(angle[1])
+s.forward(distance[0])
+s.back(distance[0])
+s.left(angle[1])
+s.forward(distance[0])
+s.right(angle[1])
+s.forward(distance[0])
+s.back(distance[0])
+s.left(angle[1])
+s.forward(distance[0])
+s.right(angle[1])
+s.forward(distance[0])
+
+# letter "T"
+s.penup()
+s.goto(100,-125)
+s.pendown()
+s.pensize(5)
+s.forward(distance[1])
+s.back(distance[0])
+s.right(angle[1])
+s.forward(distance[1])
