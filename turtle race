@@ -1,0 +1,51 @@
+import turtle # 1. import the modules
+import random
+wn = turtle.Screen() # 2. Create a screen
+wn.bgcolor('lightblue')
+
+lance = turtle.Turtle() # 3. Create two turtles
+andy = turtle.Turtle()
+lance.color('red')
+andy.color('blue')
+lance.shape('turtle')
+andy.shape('turtle')
+
+andy.up() # 4. Move the turtles to their starting point
+lance.up()
+andy.goto(-100,20)
+lance.goto(-100,-20)
+
+# variables
+andyMovement1 = (-60,20)
+andyMovement2 = (0,20)
+andyMovement3 = (70,20)
+andyMovement4 = (75,20)
+lanceMovement1 = (-50,-20)
+lanceMovement2 = (10,-20)
+lanceMovement3 = (50,-20)
+lanceMovement4 = (95,-20)
+
+andy.up()
+lance.up()
+andy.goto(andyMovement1)
+lance.goto(lanceMovement1)
+
+andy.up()
+lance.up()
+andy.goto(andyMovement2)
+lance.goto(lanceMovement2)
+
+andy.up()
+lance.up()
+andy.goto(andyMovement3)
+lance.goto(lanceMovement3)
+
+andy.up()
+lance.up()
+andy.goto(andyMovement4)
+lance.goto(lanceMovement4)
+
+print("Red wins!")
+print("Maybe next time Blue!")
+
+wn.exitonclick()
