@@ -1,0 +1,22 @@
+# created on 3/10/21
+# this program will have you guess the magic number
+
+import random
+
+# this generates a random number from 1 through 10
+computer = random.randint(1, 10)
+
+# this prompts the user for their guess 
+number = int(input("Guess the magic number 1-10: "))
+print("You've guessed: ",number)
+
+# this determines if the guess is right
+if number == computer:
+  print("That's correct! ","The magic number is",computer)
+  print("Thank you for playing!")
+
+# this determines the guess is wrong
+else: 
+  print("That's incorrect!","You were: ",int(number)-int(computer), "off")
+  print("The magic number was: ",computer)
+  print("Better luck next time!")
