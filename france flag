@@ -1,0 +1,55 @@
+import turtle
+wn = turtle.Screen()
+turtle.bgcolor('light blue')
+p = turtle.Turtle()
+p.pensize(2)
+
+# variables
+angle = 90
+length = 50
+length2 = 100
+location = 0,0
+location2 = 100,-100
+location3 = 100,0
+
+# first column
+p.goto(location)
+p.right(angle)
+p.color('blue')
+p.begin_fill()
+p.forward(length2)
+p.left(angle)
+p.forward(length)
+p.left(angle)
+p.forward(length2)
+p.left(angle)
+p.forward(length)
+p.end_fill()
+
+# second column
+p.goto(location2)
+p.right(angle)
+p.color('white')
+p.begin_fill()
+p.forward(length2)
+p.left(angle)
+p.forward(length)
+p.left(angle)
+p.forward(length2)
+p.left(angle)
+p.forward(length)
+p.end_fill()
+
+# third column 
+p.goto(location3)
+p.right(angle)
+p.color('red')
+p.begin_fill()
+p.forward(length2)
+p.left(angle)
+p.forward(length)
+p.left(angle)
+p.forward(length2)
+p.left(angle)
+p.forward(length)
+p.end_fill()
