@@ -2,7 +2,7 @@ import random
 
 def game():
   secretNumber = random.randint(1, 20)
-  print(secretNumber)
+  #print(secretNumber)
   
   guessNumber = int(input("Enter your guess here (1-20): "))
   
